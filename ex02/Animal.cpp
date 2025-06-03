@@ -26,11 +26,6 @@ Animal& Animal::operator= (const Animal &src)
 {
     if (this == &src)
         return (*this);
-    this->type = src.getType();
+    this->type = src.type;
     return (*this);
-}
-
-void Animal::makeSound(void) const
-{
-    std::cout << "Animal sound..." << std::endl;
 }
